@@ -19,6 +19,21 @@ Date of finished:
 ### Создал манифест для создания пода 
 [test.yaml](https://github.com/rufe69/2024_2025-introduction_to_distributed_technologies-k4110--bushmanov_k_a/blob/main/lab1/test.yaml)
 
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: vault
+  labels:
+    app: vault
+spec:
+  containers:
+    - name: vault
+      image: hashicorp/vault:latest
+      ports:  
+        - containerPort: 8200  
+```
+
 ### Развернул под
 ```bash
     kubectl apply -f test.yaml
