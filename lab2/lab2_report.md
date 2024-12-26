@@ -12,7 +12,8 @@ Date of finished:
 # Лабораторная работа №2
 
 ### Сделал pull для образа ifilyaninitmo/itdt-contained-frontend
-###Создал манифесты для создания deployment и сервиса
+
+### Создал манифесты для создания deployment и сервиса
 [deployment.yaml](https://github.com/rufe69/2024_2025-introduction_to_distributed_technologies-k4110--bushmanov_k_a/blob/main/lab2/deployment.yaml)
 [service.yaml](https://github.com/rufe69/2024_2025-introduction_to_distributed_technologies-k4110--bushmanov_k_a/blob/main/lab2/service.yaml)
 
