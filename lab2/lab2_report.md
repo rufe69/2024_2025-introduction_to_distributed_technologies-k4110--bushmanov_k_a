@@ -15,7 +15,48 @@ Date of finished:
 
 ### Создал манифесты для создания deployment и сервиса
 [deployment.yaml](https://github.com/rufe69/2024_2025-introduction_to_distributed_technologies-k4110--bushmanov_k_a/blob/main/lab2/deployment.yaml)
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      containers:
+      - name: frontend
+        image: ifilyaninitmo/itdt-contained-frontend:master
+        env:
+        - name: REACT_APP_USERNAME
+          value: "test_username"
+        - name: REACT_APP_COMPANY_NAME
+          value: "test_company" 
+        ports:
+        - containerPort: 86
+```
+
 [service.yaml](https://github.com/rufe69/2024_2025-introduction_to_distributed_technologies-k4110--bushmanov_k_a/blob/main/lab2/service.yaml)
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend-service
+spec:
+  type: NodePort
+  ports:
+  - port: 87
+    nodePort: 31000
+    targetPort: 3000
+  selector:
+    app: frontend
+```
 
 ### Развернул deployment 
 ```bash
