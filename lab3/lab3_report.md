@@ -117,3 +117,6 @@ kubectl apply -f config.yaml
 
 ![Сертификат](https://github.com/rufe69/2024_2025-introduction_to_distributed_technologies-k4110--bushmanov_k_a/blob/main/lab3/Screenshots/5.png "")
 
+### Схема
+![Схема](https://github.com/rufe69/2024_2025-introduction_to_distributed_technologies-k4110--bushmanov_k_a/blob/main/lab3/lab3_scheme.png "")
+
