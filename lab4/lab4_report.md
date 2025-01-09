@@ -112,3 +112,6 @@ kubectl port-forward service/frontend-service 3000:3000
 
 ###  Пинганул поды
 ![Пинг подов](https://github.com/rufe69/2024_2025-introduction_to_distributed_technologies-k4110--bushmanov_k_a/blob/main/lab4/Screenshots/10.png "")
+
+### Схема 
+![Схема](https://github.com/rufe69/2024_2025-introduction_to_distributed_technologies-k4110--bushmanov_k_a/blob/main/lab4/lab4%20scheme.png "")
